@@ -65,7 +65,7 @@ jobs:
           pwd
           sed -i "s|image: .*|image: sireeshahub1802/frontend:latest|g" kubernetes/frontend.yaml
           sed -i "s|image: .*|image: sireeshahub1802/backend:latest|g" kubernetes/backend.yaml
-          sed -i "s|image: .*|image: sireeshahub1802/database:latest|g" kubernetes/mongodb.yaml
+          sed -i "s|image: .*|image: sireeshahub1802/mongodb:latest|g" kubernetes/mongodb.yaml
           kubectl get nodes
           kubectl apply -f kubernetes/frontend.yaml
           kubectl apply -f kubernetes/backend.yaml
