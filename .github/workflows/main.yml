@@ -69,7 +69,7 @@ jobs:
           kubectl get nodes
           kubectl create namespace wanderlust
           kubectl apply -f kubernetes/frontend.yaml
-          kunbectl apply -f kubernetes/backend.yaml
+          kubectl apply -f kubernetes/backend.yaml
           kubectl apply -f kubernetes/mongodb.yaml
           kubectl apply -f kubernetes/persistentVolume.yaml
           kubectl apply -f kubernetes/persistentVolumeClaim.yaml
