@@ -67,7 +67,6 @@ jobs:
           sed -i "s|image: .*|image: sireeshahub1802/backend:latest|g" kubernetes/backend.yaml
           sed -i "s|image: .*|image: sireeshahub1802/database:latest|g" kubernetes/mongodb.yaml
           kubectl get nodes
-          kubectl create namespace wanderlust
           kubectl apply -f kubernetes/frontend.yaml
           kubectl apply -f kubernetes/backend.yaml
           kubectl apply -f kubernetes/mongodb.yaml
